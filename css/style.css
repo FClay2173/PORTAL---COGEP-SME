@@ -278,3 +278,27 @@ footer {
     padding: 15px 0;
     font-size: 0.85rem;
 }
+/* Botão Voltar ao Início */
+.nav-container {
+    padding: 12px 20px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.btn-inicio {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background-color: #0056b3;
+    color: #ffffff !important;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background-color 0.2s ease;
+}
+
+.btn-inicio:hover {
+    background-color: #003d82;
+}
