@@ -1,0 +1,116 @@
+HTML
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTAL COGEP - Prefeitura de Fortaleza</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1 class="portal-title">PORTAL COGEP</h1>
+            <div class="portal-subtitle">Coordenadoria de Gestão de Pessoas - SME Fortaleza</div>
+        </div>
+    </header>
+
+    <main class="container">
+        
+        <div class="restricted-area-container">
+            <a href="javascript:void(0)" class="btn-restricted">
+                <i class="fas fa-lock"></i> Área restrita para profissional da COGEP
+            </a>
+        </div>
+
+        <section class="grid-setores">
+            <div class="card-setor">
+                <i class="fas fa-sitemap card-icon"></i>
+                <div class="card-title">COORDENADORIA</div>
+                <div class="card-desc">Gestão Geral</div>
+            </div>
+
+            <div class="card-setor">
+                <i class="fas fa-id-card card-icon"></i>
+                <div class="card-title">CERF</div>
+                <div class="card-desc">Célula de Registro Funcional</div>
+            </div>
+
+            <div class="card-setor">
+                <i class="fas fa-user-plus card-icon"></i>
+                <div class="card-title">CESPE</div>
+                <div class="card-desc">Célula de Suprimento de Pessoal</div>
+            </div>
+
+            <a href="cebdec/index.html" class="card-setor">
+                <i class="fas fa-chart-line card-icon"></i>
+                <div class="card-title">CEBDEC</div>
+                <div class="card-desc">Célula de Benefício e Desenvolvimento de Carreira</div>
+            </a>
+
+            <div class="card-setor">
+                <i class="fas fa-file-invoice-dollar card-icon"></i>
+                <div class="card-title">CEPAG</div>
+                <div class="card-desc">Célula de Pagamento</div>
+            </div>
+        </section>
+
+        <section class="calculadoras-section">
+            <h2><i class="fas fa-calculator"></i> Calculadoras de Prazos e Dias</h2>
+            
+            <div class="calculadoras-grid">
+                <div class="calc-card">
+                    <h3>01. Somar Dias a uma Data</h3>
+                    <div class="form-group">
+                        <label for="dataInicialSum">Data Inicial:</label>
+                        <input type="date" id="dataInicialSum">
+                    </div>
+                    <div class="form-group">
+                        <label for="diasSomar">Quantos dias somar:</label>
+                        <input type="number" id="diasSomar" placeholder="Ex: 30">
+                    </div>
+                    <button class="btn-calc" onclick="somarDias()">Calcular Data Final</button>
+                    <div class="resultado-box" id="resultadoSomar">
+                        Data Final: --/--/----
+                    </div>
+                </div>
+
+                <div class="calc-card">
+                    <h3>02. Contar Dias Entre Datas</h3>
+                    <div class="form-group">
+                        <label for="dataInicialCount">DATA INICIAL:</label>
+                        <input type="date" id="dataInicialCount">
+                    </div>
+                    <div class="form-group">
+                        <label for="dataFinalCount">DATA FINAL:</label>
+                        <input type="date" id="dataFinalCount">
+                    </div>
+                    <button class="btn-calc" onclick="contarDias()">Calcular Diferença</button>
+                    <div class="resultado-box" id="resultadoContar">
+                        Total (Inclusive): 0 dias
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <div class="info-contato">
+        <div class="container">
+            <p><i class="fas fa-map-marker-alt"></i> Rua Barbosa de Freitas, 2273 - Dionísio Torres - CEP 60170-002 - Fortaleza/CE - Brasil</p>
+            <p><i class="fas fa-phone-alt"></i> Telefone Geral: (85) 3459-5900</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>Setor COGEP - Coordenadoria de Gestão de Pessoas - SME Fortaleza</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
