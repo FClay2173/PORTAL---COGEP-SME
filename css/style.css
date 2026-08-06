@@ -302,3 +302,26 @@ footer {
 .btn-inicio:hover {
     background-color: #003d82;
 }
+/* Estilo do Rodapé */
+.footer-creditos {
+    background-color: #1e293b;
+    color: #cbd5e1;
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 40px;
+    font-size: 14px;
+    border-top: 3px solid #0056b3;
+}
+
+.footer-content p {
+    margin: 4px 0;
+}
+
+.footer-content .dev-by {
+    font-size: 13px;
+    color: #94a3b8;
+}
+
+.footer-content .dev-by strong {
+    color: #38bdf8; /* Destaque em tom azul claro para o seu nome */
+}
